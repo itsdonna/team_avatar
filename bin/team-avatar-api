@@ -2,4 +2,8 @@
 
 require_relative "../lib/environment"
 
-API.get_team_avatar
+cli = Cli.new
+cli.start
+
+# API.get_team_avatar
+
