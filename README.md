@@ -1,12 +1,13 @@
 # TeamAvatar
 
-Welcome to Team Avatar! This is where you can find all details about any of the past and current Avatars. You will be able to see who their enemies are, their affiliation, and of course the name of the Avatar. Put your Ruby code in the file `lib/team_avatar`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to Team Avatar! This is where you can find all details about any of the past and current Avatars. You will be able to see who their enemies are, their affiliation, and of course the name of the Avatar. 
 
+Put your Ruby code in the file `lib/team_avatar`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 
 ## Installation
 
-At thsi current time this is not a gem. However, you can run this program by forking and cloning from your github account to your local environment. 
+At this current time this is not a gem. However, you can run this program by forking and cloning from your github account to your local environment. 
 You can then run the file by putting the following command into your terminal: ./bin/team-avatar-api
 
 ## Usage
