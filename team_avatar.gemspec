@@ -3,11 +3,11 @@ require_relative 'lib/team_avatar/version'
 Gem::Specification.new do |spec|
   spec.name          = "team_avatar"
   spec.version       = TeamAvatar::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.authors       = ["itsdonna"]
+  spec.email         = ["todonnatorres@icloud.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{Create list of Avatar characters.}
+ 
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 

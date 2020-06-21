@@ -1,7 +1,7 @@
 class Cli
     
     def start
-        puts "Welcome Team Avatar"
+        puts "Welcome Team Avatar! Yip, Yip!"
         API.get_team_avatar
         print_main_menu
     end
@@ -10,8 +10,8 @@ class Cli
         puts ""
         puts "Menu:"
         puts "Type name to get list a character"
-        puts "Type affiliation to get ...."
-        puts "Type enemies to get information"
+        puts "Type affiliation to get more information"
+        puts "Type enemies to get each Avatars enemies."
         puts "Type bye to exit"
         puts ""  
         main_menu
@@ -71,12 +71,12 @@ class Cli
 
     def invalid_input
         puts ""
-        puts "Sharing tea with a fascinating stranger is one of life’s true delights. Did you want to go to main menu?"
+        puts "Did you want to go to main menu?"
         puts ""
     end
 
     def print_name
-     puts "~ ~ ~ ~ ~ ~ "
+        puts "------------------------"
         Team_Avatar.all.each.with_index do |a, i|
             puts ""
             puts "Name #{i}: #{a.name}"
@@ -106,7 +106,7 @@ class Cli
 
     def bye
         puts ""
-        puts "Sad to see you go!"
+        puts "Enjoy a nice cup of hot tea! Farewell!"
         puts ""
         exit
     end
