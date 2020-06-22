@@ -7,7 +7,7 @@ Put your Ruby code in the file `lib/team_avatar`. To experiment with that code, 
 
 ## Installation
 
-At this current time this is not a gem. However, you can run this program by forking and cloning from your github account to your local environment. 
+You can run this program by forking and cloning from your github account to your local environment. 
 You can then run the file by putting the following command into your terminal: ./bin/team-avatar-api
 
 ## Usage
