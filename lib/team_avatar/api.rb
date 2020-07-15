@@ -11,7 +11,7 @@ class API
             enemies = team_avatar_data["enemies"]
             affiliation = team_avatar_data["affiliation"]
             Team_Avatar.new(name: name, affiliation: affiliation, enemies: enemies)
-            # binding.pry
+            
         end
     end
 end

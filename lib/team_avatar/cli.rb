@@ -3,6 +3,7 @@ class Cli
     def start
         puts "Welcome Team Avatar! Yip, Yip!"
         API.get_team_avatar
+        # binding.pry
         print_main_menu
     end
 
@@ -15,21 +16,29 @@ class Cli
         puts "Type bye to exit"
         puts ""  
         main_menu
-        
-
     end
+
+   
+
+    
 
     def main_menu
         input = gets.strip.downcase
+
         if input == "name"
+                       
             puts ""
             puts "You typed name. Here are some characters"
             print_name
             puts ""
+            puts "Enter name to see enemies and affiliation"
+            input = gets.strip.downcase
+            print_find_by_name(input)
             puts "To go back and get a new character, type \"back\"."
             puts "To exit, type \"bye\"."
             puts "" 
             main_menu
+
 
         elsif input == "affiliation"
             puts ""
@@ -81,6 +90,22 @@ class Cli
             puts ""
             puts "Name #{i}: #{a.name}"
         end
+    end
+    
+    def print_find_by_name(avatar)
+        
+        tea = Team_Avatar.all.find{|avi| avi.name.downcase == avatar} 
+        if !tea 
+            puts "Team member not found."
+        else       
+        puts "name: #{tea.name}" 
+        puts ""
+        puts "affiliation #{tea.affiliation}"
+        puts ""
+        puts "enemies #{tea.enemies[0]}"
+        end
+
+
     end
 
     def print_enemies 

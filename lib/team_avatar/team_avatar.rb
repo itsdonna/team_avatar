@@ -20,6 +20,7 @@ class Team_Avatar
     end
 end
 
+#refactoring to call on name , and return an  shows affliation enemies 
 
 
 # - name 
